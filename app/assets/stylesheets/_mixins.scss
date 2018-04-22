@@ -1,0 +1,47 @@
+@mixin media($type) {
+
+  @if $type == tablet {
+    @media only screen and (min-width: $breakpoint--tablet) and (max-width: $breakpoint--desktop - 1) {
+      @content;
+    }
+  }
+  @else if $type == desktop {
+    @media only screen and (min-width: $breakpoint--desktop) and (max-width: $breakpoint--desktop-large - 1) {
+      @content;
+    }
+  }
+  @else if $type == desktop-large {
+    @media only screen and (min-width: $breakpoint--desktop-large) {
+      @content;
+    }
+  }}
+
+@mixin setLogoWidthAndPadding($width: 100%, $padding: 10px) {
+  width: $width;
+  padding: $padding 0;
+}
+
+@mixin setCardGradient {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0,0,0,0)),color-stop(125%, rgba(0,0,0,1)));
+  background: linear-gradient(to left, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 125%);
+}
+
+@mixin setPositionToCover {
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@mixin setIconDropShadow {
+  -webkit-filter: drop-shadow( 0px 0px 5px $drop-shadow--dark );
+          filter: drop-shadow( 0px 0px 5px $drop-shadow--dark );
+}
+
+@mixin setTextDropShadow {
+  text-shadow: 0px 0px 5px $drop-shadow--dark;
+}
+
+@mixin calculateLineHeight($font-size: 16px, $ratio: 1.5) {
+  line-height: $font-size * $ratio;
+}

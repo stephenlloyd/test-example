@@ -1,0 +1,26 @@
+.btn {
+  border-radius: $border-radius--button;
+  text-decoration: none;
+  text-align: center;
+  padding: $button__padding;
+  display: inline-block;
+}
+
+.btn--offer {
+  background-color: $colour--blue;
+  font-size: $button__font-size;
+  color: $colour--white;
+  letter-spacing: $button__letter-spacing;
+}
+
+.btn--delete {
+  width: $button__size--delete;
+  height: $button__size--delete;
+  position: absolute;
+  top: $button__margin--delete;
+  right: $button__margin--delete;
+  padding: 0;
+  clear: left;
+  float: right;
+  @include setIconDropShadow;
+}

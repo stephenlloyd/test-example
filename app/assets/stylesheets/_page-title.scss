@@ -1,0 +1,35 @@
+.page-title-container {
+  background-color: $colour--light-grey;
+  border-bottom: $border-style $border-width $colour--mid-grey;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: $page-title-container__height;
+}
+
+.page-title__header {
+  font-weight: $font-weight--semibold;
+  font-size: $font-size__header--mobile;
+  @include calculateLineHeight($font-size__header--mobile);
+
+  @include media(tablet) {
+    font-size: $font-size__header;
+    @include calculateLineHeight($font-size__header);
+  }
+
+  @include media(desktop) {
+    font-size: $font-size__header;
+    @include calculateLineHeight($font-size__header);
+  }
+
+  @include media(desktop-large) {
+    font-size: $font-size__header;
+    @include calculateLineHeight($font-size__header);
+  }
+}

@@ -1,0 +1,12 @@
+%div{class: "card"}
+  %div{class: "card__image-container", style: 'background-image: url('"#{asset_path(car[:image_name])}"')'}
+    %div{class: "card__label"}
+      %h4{class: "card__make"}=car[:make]
+      %h3{class: "card__model"}=car[:model]
+  %div{class: "card__toolbar"}
+    = link_to render_svg("archive_icon.svg"), '#', class: "btn btn--delete"
+    - if car[:has_new_offer]
+      %a{href: "#", class: "btn btn--offer"} 1 new offer
+  %div{class: "card__technical-specifications"}
+    %p{class: "card__engine"}=car[:engine]
+    %p{class: "card__details"}=car[:details]

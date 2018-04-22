@@ -1,0 +1,55 @@
+.branding-area {
+  background-color: $colour--blue;
+}
+
+.branding-area__wrapper {
+  max-width: $breakpoint--mobile;
+  margin: 0 auto;
+  padding-left: $gutter-size--default;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: $branding-area__height--mobile;
+
+  @include media(tablet) {
+    padding-left: $gutter-size--default * 4;
+    height: $branding-area__height;
+    min-width: $breakpoint--mobile + 1;
+    max-width: $breakpoint--tablet;  }
+
+  @include media(desktop) {
+    padding-left: $gutter-size--default * 4;
+    height: $branding-area__height;
+    max-width: $breakpoint--desktop;
+  }
+
+  @include media(desktop-large) {
+    padding-left: $gutter-size--default * 4;
+    height: $branding-area__height;
+    max-width: $breakpoint--desktop-large;
+  }
+}
+
+.branding-area__logo-container {
+  display: inline-block;
+  @include setLogoWidthAndPadding($logo__width--mobile, $logo__padding--mobile);
+
+  @include media(tablet) {
+    @include setLogoWidthAndPadding($logo__width--tablet, $logo__padding--tablet);
+  }
+
+  @include media(desktop) {
+    @include setLogoWidthAndPadding($logo__width--desktop, $logo__padding--desktop);
+  }
+
+  @include media(desktop-large) {
+    @include setLogoWidthAndPadding($logo__width--desktop, $logo__padding--desktop);
+  }
+}
+
+.logo-container svg {
+  display: block;
+}

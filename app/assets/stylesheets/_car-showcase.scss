@@ -1,0 +1,32 @@
+.car-showcase {
+  padding: ($gutter-size--default * 2) 0;
+  margin: 0 auto;
+  max-width: $breakpoint--mobile;
+
+  &:after {
+  width: $card__width;
+  height: 0;
+  content: "";
+  display: inline-block;
+}
+
+  @include media(tablet) {
+    padding: ($gutter-size--default * 2) ($gutter-size--default * 3);
+    max-width: $breakpoint--tablet;
+  }
+
+  @include media(desktop) {
+    padding: ($gutter-size--default * 2) ($gutter-size--default * 3);
+    max-width: $breakpoint--desktop;
+  }
+
+  @include media(desktop-large) {
+    padding: ($gutter-size--default * 2) ($gutter-size--default * 3);
+    max-width: $breakpoint--desktop-large;
+  }
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}

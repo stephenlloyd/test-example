@@ -1,0 +1,72 @@
+// Borders
+$border-style: solid;
+$border-width: 1px;
+
+// Breakpoints
+$breakpoint--mobile: 288px;
+$breakpoint--tablet: 705px;
+$breakpoint--desktop: 1060px;
+$breakpoint--desktop-large: 1345px;
+
+// Brand Marks
+$logo__width--mobile: 126px;
+$logo__width--tablet: 159px;
+$logo__width--desktop: 142.5px;
+
+$logo__padding--mobile: 14px;
+$logo__padding--tablet: 23px;
+$logo__padding--desktop: 25px;
+
+
+// Button
+$button__letter-spacing: 1px;
+$button__padding: 4px 20px;
+$button__margin--delete: 8px;
+$button__size--delete: 32px;
+// For button fonts, see 'Fonts' section
+
+// Colors
+$colour--ash: #eeeeee;
+$colour--black: #000000;
+$colour--blue: #00a4ff;
+$colour--dark-grey: #4d4f52;
+$colour--light-grey: #f5f5f5;
+$colour--mid-grey: #dddddd;
+$colour--white: #ffffff;
+
+// Curves
+$border-radius--button: 16px;
+$border-radius--card: 6px;
+
+// Effects
+$drop-shadow--dark: rgba(0,0,0,0.75);
+
+// Fonts & Typography
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+$font-family--base: 'Montserrat', sans-serif;
+$font-weight--bold: 700;
+$font-weight--semibold: 600;
+
+$font-size__header: 40px;
+$font-size__header--mobile: 32px;
+$font-size__card__make: 18px;
+$font-size__card__make--mobile: 16px;
+$font-size__card__model: 28px;
+$font-size__card__model--mobile: 24px;
+$font-size__card__engine: 16px;
+$font-size__card__details: 14px;
+
+$line-height__ratio--card-label: 1.1;
+
+
+$button__font-size: 14px;
+
+// Layout
+$gutter-size--default: 16px;
+$page-title-container__height: 200px;
+
+$branding-area__height--mobile: 48px;
+$branding-area__height: 72px;
+
+$card__width: 288px;
+$card__height: 170px;
